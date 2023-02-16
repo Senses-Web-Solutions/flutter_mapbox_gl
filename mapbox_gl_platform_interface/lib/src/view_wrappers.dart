@@ -49,9 +49,10 @@ class TextureAndroidViewControllerWrapper
   // @override
   bool awaitingCreation = true;
 
-  bool  requiresViewComposition => false;
-
-
+  @override
+  bool get requiresViewComposition {
+    return false;
+  }
   // @override
   Future<void> clearFocus() => _controller.clearFocus();
 
